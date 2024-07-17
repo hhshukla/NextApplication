@@ -7,11 +7,11 @@
   "/Blog/blog2": "pages/Blog/blog2.html",
   "/Blog": "pages/Blog.html",
   "/about": "pages/about.html",
-  "/_error": "pages/_error.js",
   "/api/hello": "pages/api/hello.js",
   "/clients": "pages/clients.html",
-  "/vehicle": "pages/vehicle.html",
-  "/services": "pages/services.html",
+  "/_error": "pages/_error.js",
   "/": "pages/index.html",
-  "/contact": "pages/contact.html"
+  "/contact": "pages/contact.html",
+  "/vehicle": "pages/vehicle.html",
+  "/services": "pages/services.html"
 }
