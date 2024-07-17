@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import Link from "next/link";
 
 interface MainHeaderProps {
@@ -26,14 +25,21 @@ const MainHeader: React.FC<MainHeaderProps> = ({ menuItems, logoSrc }) => {
               className="block text-orange-600 text-xl px-3 py-1 focus:outline-none bg-white rounded-[3px] "
               onClick={toggleMenu}
             >
-              <img src="/img/download.svg" alt="toggle navbar" className="w-10" />
+              <img
+                src="/img/download.svg"
+                alt="toggle navbar"
+                className="w-10"
+              />
             </button>
           </div>
           <div className="hidden lg:block">
             <ul className="flex">
               {menuItems?.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.path} className="text-white font-medium font-sans hover:text-orange-500 mr-14">
+                  <Link
+                    href={item.path}
+                    className="text-white font-medium font-sans hover:text-orange-500 mr-14"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -49,7 +55,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ menuItems, logoSrc }) => {
                   className="text-mainWhite py-2 px-4 transition duration-1000 hover:text-primary1 cursor-pointer"
                   key={index}
                 >
-                    <Link href={item.path}>{item.label}</Link>
+                  <Link href={item.path}>{item.label}</Link>
                 </li>
               ))}
             </ul>
